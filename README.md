@@ -9,18 +9,7 @@ This **Start.ps1** script will keep monitoring a user defined resource folder, i
 
 The **Start.ps1** script will keep monitoring the resource folder in the background as long the PowerShell ISE is running. Run the **End.ps1** script to terminate the monitoring without close the PowerShell ISE interface.
 
-```flow
-st=>start:  Start.ps1
-op=>operation: Monitoring the Resource Folder
-cond=>condition: If any file was created:
-				  Yes or No?
-k=>operation: Print the new created file to the default printer
-e=>end
-
-st->op->cond
-cond(yes)->k->op
-cond(no)->op
-```
+<img src="https://github.com/y5mei/Saved-Pictures/blob/master/KFlowChart.JPG" alt="P26" style="zoom:100%;" />
 
 ###  Usage
 ---
